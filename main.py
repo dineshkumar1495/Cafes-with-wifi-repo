@@ -25,7 +25,7 @@ def home():
     return render_template("index.html")
 
 def read_data():
-    with open(r"D:\BCA\python_bootcamp\projects\coffee-wifi-flask-mine\cafe_data.csv", newline='', encoding="utf-8") as file:
+    with open(r"cafe_data.csv", newline='', encoding="utf-8") as file:
         csv_data = csv.reader(file,delimiter=',')
         list_of_rows = []
         for row in csv_data:
